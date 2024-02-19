@@ -49,9 +49,14 @@ for image in "${missing_images[@]}"; do
     echo "  - $image"
 done
 
+param=$1
 # 拉取不存在的镜像
 for image in "${missing_images[@]}"; do
     echo "正在拉取 $image ..."
-    # docker pull "$image"
-    bash docker-p.sh "$image"
+	# 判断参数是否为"proxy"
+	if [ "$param" == "proxy" ]; then
+		bash docker-p.sh "$image"
+	else
+		docker pull "$image"
+	fi
 done
