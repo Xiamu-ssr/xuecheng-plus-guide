@@ -8,6 +8,7 @@ declare -a expected_images=(
     "mysql:8.2.0"
     "nacos/nacos-server:v2.3.0"
     "minio/minio:RELEASE.2024-01-29T03-56-32Z"
+    "xuxueli/xxl-job-admin:2.4.0"
     "nginx:latest"
     "elasticsearch:7.17.17"
     "kibana:7.17.17"
