@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2c9069-ae34-4092-ae9c-c6f5aca0e709" name="更改" comment="update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/image.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utils/image.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +52,11 @@
       <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\nginx-portal-serve" />
+      <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\nginx-static" />
       <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\mysql_nacos" />
       <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\mysql" />
       <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\elasticsearch" />
-      <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\minio" />
-      <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695296061726</updated>
       <workItem from="1708352132347" duration="3245000" />
-      <workItem from="1708393078217" duration="4161000" />
+      <workItem from="1708393078217" duration="5121000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -110,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708394998943</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1708397978108</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708397978108</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
