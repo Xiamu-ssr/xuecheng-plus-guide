@@ -180,5 +180,5 @@ services:
     env_file:
       - ./env/rabbitmq.env
     networks:
-      docker_xuecheng:
+      xuecheng:
         ipv4_address: 172.20.6.1
