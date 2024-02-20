@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2c9069-ae34-4092-ae9c-c6f5aca0e709" name="更改" comment="update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/init.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose-jar.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose-jar.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mumu/IdeaProjects/xuecheng-plus-guide/docker/kibana/init2.json",
+    "last_opened_file_path": "C:/Users/mumu/IdeaProjects/xuecheng-plus-guide/docker/springcloud",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker\springcloud" />
       <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\docker" />
       <recent name="C:\Users\mumu\IdeaProjects\xuecheng-plus-guide\utils" />
     </key>
@@ -68,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695296061726</updated>
       <workItem from="1708352132347" duration="3245000" />
-      <workItem from="1708393078217" duration="10399000" />
+      <workItem from="1708393078217" duration="11701000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -142,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708406910741</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <option name="closed" value="true" />
+      <created>1708413966616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708413966616</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
