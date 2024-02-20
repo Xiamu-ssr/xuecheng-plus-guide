@@ -38,7 +38,7 @@ services:
     ports:
       - "8601:8601"
     tty: true
-    command: cd /root/project-xczx2-portal-vue-ts && npm run serve
+    command: bash -c "cd /root/project-xczx2-portal-vue-ts && npm run serve"
     networks:
       docker_xuecheng:
         ipv4_address: 172.20.20.2
