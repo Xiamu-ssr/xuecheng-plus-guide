@@ -21,3 +21,5 @@ mkdir ./mysql/data
 mkdir ./mysql_nacos/data
 mkdir ./nacos/standalone-logs
 mkdir ./xxl_job/logs
+
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest

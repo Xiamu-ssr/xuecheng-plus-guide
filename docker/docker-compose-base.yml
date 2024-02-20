@@ -38,6 +38,7 @@ services:
       interval: 5s
       timeout: 10s
       retries: 10
+    restart: always
     networks:
       xuecheng:
         ipv4_address: 172.20.1.1
