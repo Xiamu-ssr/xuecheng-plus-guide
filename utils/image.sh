@@ -18,6 +18,7 @@ declare -a expected_images=(
     "joxit/docker-registry-ui:main"
     "openjdk:17"
     "node:16.17.0-slim"
+    "redis:7.2"
 )
 
 # 获取docker images的输出，跳过第一行（标题行）
