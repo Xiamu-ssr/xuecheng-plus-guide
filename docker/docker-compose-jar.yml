@@ -1,0 +1,109 @@
+version: "3.8"
+networks:
+  docker_xuecheng:
+    external: true
+
+services:
+  xuecheng-plus-gateway:
+    container_name: xuecheng-plus-gateway
+    image: openjdk:17
+    ports:
+      - "63010:63010"
+    volumes:
+      - ./springcloud/xuecheng-plus-gateway.jar:/app.jar
+      - ./springcloud/xuecheng-plus-gateway/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.11.1
+
+  xuecheng-plus-learning:
+    container_name: xuecheng-plus-learning
+    image: openjdk:17
+    ports:
+      - "63020:63020"
+    volumes:
+      - ./springcloud/xuecheng-plus-learning-api.jar:/app.jar
+      - ./springcloud/xuecheng-plus-learning-api/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.12.1
+
+  xuecheng-plus-order:
+    container_name: xuecheng-plus-order
+    image: openjdk:17
+    ports:
+      - "63030:63030"
+    volumes:
+      - ./springcloud/xuecheng-plus-orders-api.jar:/app.jar
+      - ./springcloud/xuecheng-plus-orders-api/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.13.1
+
+  xuecheng-plus-content:
+    container_name: xuecheng-plus-content
+    image: openjdk:17
+    ports:
+      - "63040:63040"
+    volumes:
+      - ./springcloud/xuecheng-plus-content-api.jar:/app.jar
+      - ./springcloud/xuecheng-plus-content-api/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.14.1
+
+  xuecheng-plus-media:
+    container_name: xuecheng-plus-media
+    image: openjdk:17
+    ports:
+      - "63050:63050"
+    volumes:
+      - ./springcloud/xuecheng-plus-media-api.jar:/app.jar
+      - ./springcloud/xuecheng-plus-media-api/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.15.1
+
+  xuecheng-plus-auth:
+    container_name: xuecheng-plus-auth
+    image: openjdk:17
+    ports:
+      - "63070:63070"
+    volumes:
+      - ./springcloud/xuecheng-plus-auth.jar:/app.jar
+      - ./springcloud/xuecheng-plus-auth/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.16.1
+
+  xuecheng-plus-search:
+    container_name: xuecheng-plus-search
+    image: openjdk:17
+    ports:
+      - "63080:63080"
+    volumes:
+      - ./springcloud/xuecheng-plus-search.jar:/app.jar
+      - ./springcloud/xuecheng-plus-search/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.17.1
+
+  xuecheng-plus-system:
+    container_name: xuecheng-plus-system
+    image: openjdk:17
+    ports:
+      - "63110:63110"
+    volumes:
+      - ./springcloud/xuecheng-plus-system-api.jar:/app.jar
+      - ./springcloud/xuecheng-plus-system-api/logs:/logs
+    command: ["java", "-jar", "-Dspring.profiles.active=prod", "-Dspring.cloud.nacos.server-addr=172.20.1.2:8848", "-Dspring.cloud.nacos.discovery.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406", "-Dspring.cloud.nacos.config.namespace=4cfd5004-65d1-48ab-b60a-dc5259bc5406" , "/app.jar"]
+    networks:
+      docker_xuecheng:
+        ipv4_address: 172.20.18.1
